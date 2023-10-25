@@ -58,7 +58,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         origButtonGroup.add(origRb1);
         origRb1.setText("Opcion 1");
-        origRb1.setActionCommand("Opcion 1");
         origRb1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 origRb1ActionPerformed(evt);
@@ -66,9 +65,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
 
         origButtonGroup.add(origRb2);
-        origRb2.setSelected(true);
         origRb2.setText("Opcion 2");
-        origRb2.setActionCommand("Opcion 2");
         origRb2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 origRb2ActionPerformed(evt);
@@ -221,9 +218,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addComponent(lbOriginal)
                 .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(origRb1)
                     .addComponent(origCb1)
-                    .addComponent(origTexto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(origTexto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(origRb1))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -244,9 +241,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addComponent(lbOriginal1)
                 .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(copyRb1)
                     .addComponent(copyCb1)
-                    .addComponent(copyTexto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(copyTexto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(copyRb1))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -266,10 +263,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void origRb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_origRb1ActionPerformed
-        copyRb1.setSelected(true);
-    }//GEN-LAST:event_origRb1ActionPerformed
 
     private void origRb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_origRb2ActionPerformed
         copyRb2.setSelected(true);
@@ -302,6 +295,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private void origSpinnerStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_origSpinnerStateChanged
         copySpinner.setValue(origSpinner.getValue());
     }//GEN-LAST:event_origSpinnerStateChanged
+
+    private void origRb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_origRb1ActionPerformed
+        copyRb1.setSelected(true);
+    }//GEN-LAST:event_origRb1ActionPerformed
 
 
 

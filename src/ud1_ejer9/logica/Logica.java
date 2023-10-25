@@ -12,7 +12,7 @@ import ud1_ejer9.gui.VentanaPrincipal;
  *
  * @author Jose Javier BO
  */
-public class Logica {
+public class Logica { 
 
     /**
      * @param args the command line arguments
