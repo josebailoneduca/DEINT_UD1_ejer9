@@ -53,6 +53,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         copySpinner = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         lbOriginal.setText("Original");
 
