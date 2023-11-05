@@ -7,7 +7,9 @@ Lista de paquetes:
 package ud1_ejer9.gui;
 
 /**
- *
+ * Ventana del ejerccicio UD1_9. Contiene en la zona superior radiobuttons checkbox y otros inputs
+ * cuyo estado es replicado por unos equivalentes en la zona inferior que estan deshabilitdos
+ * 
  * @author Jose Javier BO
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
@@ -41,7 +43,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         origComboBox = new javax.swing.JComboBox<>();
         origSpinner = new javax.swing.JSpinner();
         jSeparator1 = new javax.swing.JSeparator();
-        lbOriginal1 = new javax.swing.JLabel();
+        lbEspejo = new javax.swing.JLabel();
         copyRb1 = new javax.swing.JRadioButton();
         copyRb2 = new javax.swing.JRadioButton();
         copyRb3 = new javax.swing.JRadioButton();
@@ -121,7 +123,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        lbOriginal1.setText("Original");
+        lbEspejo.setText("Espejo");
 
         copyButtonGroup.add(copyRb1);
         copyRb1.setText("Opcion 1");
@@ -209,7 +211,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                                     .addComponent(copyComboBox, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(copySpinner, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(copyTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(lbOriginal1))))
+                            .addComponent(lbEspejo))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -239,7 +241,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbOriginal1)
+                .addComponent(lbEspejo)
                 .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(copyCb1)
@@ -315,8 +317,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JSpinner copySpinner;
     private javax.swing.JTextField copyTexto;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JLabel lbEspejo;
     private javax.swing.JLabel lbOriginal;
-    private javax.swing.JLabel lbOriginal1;
     private javax.swing.ButtonGroup origButtonGroup;
     private javax.swing.JCheckBox origCb1;
     private javax.swing.JCheckBox origCb2;

@@ -101,7 +101,7 @@
                                   <Component id="copyTexto" alignment="1" min="-2" pref="101" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="lbOriginal1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbEspejo" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -142,7 +142,7 @@
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="lbOriginal1" min="-2" max="-2" attributes="0"/>
+              <Component id="lbEspejo" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="copyCb1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -266,9 +266,9 @@
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator1">
     </Component>
-    <Component class="javax.swing.JLabel" name="lbOriginal1">
+    <Component class="javax.swing.JLabel" name="lbEspejo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Original"/>
+        <Property name="text" type="java.lang.String" value="Espejo"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="copyRb1">
